@@ -1,0 +1,17 @@
+.useeffecthook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.useeffecthook > button {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.useeffecthook > h1 {
+  font-size: 8rem;
+}

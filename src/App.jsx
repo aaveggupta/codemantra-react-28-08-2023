@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import UseStateHook from "./components/UseStateHook/UseStateHook";
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+      <UseStateHook />
     </div>
   );
 }

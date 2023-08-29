@@ -1,4 +1,4 @@
-.useeffecthook {
+.usestatehook {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,12 +6,12 @@
   gap: 1rem;
 }
 
-.useeffecthook > button {
+.usestatehook > button {
   width: 4rem;
   height: 4rem;
   font-size: 2rem;
 }
 
-.useeffecthook > h1 {
+.usestatehook > h1 {
   font-size: 8rem;
 }

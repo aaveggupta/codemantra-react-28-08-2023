@@ -2,25 +2,20 @@ import React, { useState } from "react";
 import "./UseStateHook.css";
 
 const UseStateHook = () => {
-  // usestate do cheeze return (array ki form mein kr rha) array
-  // ka pehle -> var, array ka dusara > (fun, var ko change krne k kaam aaega)
-  const [count, setCount] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const increment = () => {
-    setCount((prevVal) => prevVal + 1);
-    setCount((prevVal) => prevVal + 1);
-  };
-
-  const decrement = () => {
-    setCount(count - 1);
-    setCount(count - 1);
+  const buttonHandler = () => {
+    setIsDarkMode((prevVal) => !prevVal);
   };
 
   return (
-    <div className="usestatehook">
-      <button onClick={decrement}>-</button>
-      <h1>{count}</h1>
-      <button onClick={increment}>+</button>
+    <div
+      className="usestatehook"
+      style={{ backgroundColor: isDarkMode ? "black" : "white" }}
+    >
+      <button onClick={buttonHandler}>
+        {isDarkMode ? "White Mode" : "Black Mode"}
+      </button>
     </div>
   );
 };

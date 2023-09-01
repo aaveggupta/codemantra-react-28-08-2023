@@ -1,17 +1,13 @@
 .usestatehook {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 1rem;
+  transition: 1s all ease;
 }
 
 .usestatehook > button {
-  width: 4rem;
-  height: 4rem;
-  font-size: 2rem;
 }
 
-.usestatehook > h1 {
-  font-size: 8rem;
-}

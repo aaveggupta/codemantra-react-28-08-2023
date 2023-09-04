@@ -8,6 +8,9 @@
   transition: 1s all ease;
 }
 
-.usestatehook > button {
+.usestatehook > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 

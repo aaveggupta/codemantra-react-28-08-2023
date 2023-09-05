@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import TodoTitleComponent from "./components/TodoTitleComponent/TodoTitleComponent";
+import TodoContainerComponent from "./components/TodoContainerComponent/TodoContainerComponent";
 
 function App() {
+  const [todoList, setTodoList] = useState([]);
+
   return (
     <div className="App">
-      <h1>App</h1>
+      <TodoTitleComponent todoList={todoList} setTodoList={setTodoList} />
+      <TodoContainerComponent todoList={todoList} setTodoList={setTodoList} />
     </div>
   );
 }

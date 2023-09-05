@@ -1,0 +1,25 @@
+.todotitlecomponent {
+  padding: 2rem 3rem 1rem 3rem;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--dusty-white);
+  top: 0;
+}
+
+.todotitlecomponent > h1 {
+  font-weight: var(--font-medium);
+  font-size: 3rem;
+}
+
+.todotitlecomponent input {
+   all: unset;
+   background-color: white;
+   width: 30rem;
+   padding: 1rem;
+   border-radius: 4rem;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}

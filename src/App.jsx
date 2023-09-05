@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import UseStateHook from "./components/UseStateHook/UseStateHook";
+import TodoTitleComponent from "./components/TodoTitleComponent/TodoTitleComponent";
+import TodoContainerComponent from "./components/TodoContainerComponent/TodoContainerComponent";
 
 function App() {
   return (
     <div className="App">
-      <UseStateHook />
+      <TodoTitleComponent />
+      <TodoContainerComponent />
     </div>
   );
 }

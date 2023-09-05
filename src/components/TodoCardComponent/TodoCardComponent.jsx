@@ -1,13 +1,16 @@
 import React from "react";
 import "./TodoCardComponent.css";
 
-const TodoCardComponent = () => {
+import TrashIcon from "../../assets/icons/trash.png";
+
+const TodoCardComponent = ({ id, content, date, deleteHandler }) => {
   return (
     <div className="todocardcomponent">
       <div>
-        <h2>Content of the card</h2>
-        <p>September 4, 2023</p>
+        <h2>{content}</h2>
+        <p>{date}</p>
       </div>
+      <img src={TrashIcon} alt="trash-icon" onClick={() => deleteHandler(id)} />
     </div>
   );
 };

@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--dusty-white);
+  top: 0;
 }
 
 .todotitlecomponent > h1 {

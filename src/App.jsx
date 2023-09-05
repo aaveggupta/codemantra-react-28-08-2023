@@ -5,7 +5,7 @@ import TodoContainerComponent from "./components/TodoContainerComponent/TodoCont
 
 function App() {
   const [todoList, setTodoList] = useState([]);
-  console.log(todoList);
+
   return (
     <div className="App">
       <TodoTitleComponent todoList={todoList} setTodoList={setTodoList} />

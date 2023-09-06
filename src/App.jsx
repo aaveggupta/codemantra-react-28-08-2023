@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import TodoTitleComponent from "./components/TodoTitleComponent/TodoTitleComponent";
-import TodoContainerComponent from "./components/TodoContainerComponent/TodoContainerComponent";
+import UseEffectHook from "./components/UseEffectHook/UseEffectHook";
 
 function App() {
-  const [todoList, setTodoList] = useState([]);
-
   return (
     <div className="App">
-      <TodoTitleComponent todoList={todoList} setTodoList={setTodoList} />
-      <TodoContainerComponent todoList={todoList} setTodoList={setTodoList} />
+      <UseEffectHook />
     </div>
   );
 }

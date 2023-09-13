@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { REQUESTS, getContent } from "./utils/api-requests";
+import MovieContainer from "./components/AllMovieLayout/MovieContainer/MovieContainer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const result = getContent(REQUESTS.COMEDY_MOVIES);
-  console.log(result);
-
-  console.log(result);
-
   return (
     <div className="App">
-      <h1>{count}</h1>
-      <button onClick={() => setCount((prev) => prev + 1)}>INCREASE</button>
+      <MovieContainer />
     </div>
   );
 }

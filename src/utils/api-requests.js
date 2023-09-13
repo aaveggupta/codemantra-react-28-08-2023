@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const BASE_URL = "https://api.themoviedb.org/3";
+export const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
 export const REQUESTS = {
   TRENDING: `/trending/all/week?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-us`,
@@ -14,12 +15,11 @@ export const REQUESTS = {
 };
 
 export const getContent = async (REQUEST) => {
-  await axios
-    .get(`${BASE_URL}${REQUEST}`)
-    .then(function (response) {
-      return response?.data;
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  try {
+    const response = await axios.get(`${BASE_URL}${REQUEST}`);
+    return response?.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
 };

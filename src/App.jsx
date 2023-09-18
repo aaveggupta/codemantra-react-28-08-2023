@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
-import TodoTitleComponent from "./components/TodoTitleComponent/TodoTitleComponent";
-import TodoContainerComponent from "./components/TodoContainerComponent/TodoContainerComponent";
+import SearchComponent from "./components/SearchComponent/SearchComponent";
+import ResultComponent from "./components/ResultComponent/ResultComponent";
 
 function App() {
-  const [todoList, setTodoList] = useState([]);
-
+  const [place, setPlace] = useState("");
   return (
     <div className="App">
-      <TodoTitleComponent todoList={todoList} setTodoList={setTodoList} />
-      <TodoContainerComponent todoList={todoList} setTodoList={setTodoList} />
+      <SearchComponent setPlace={setPlace} />
+      <ResultComponent place={place} />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.resultComponent {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(255, 244, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultComponent > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: rgb(233, 93, 116);
+}
+
+.resultComponent > h1 span {
+  font-weight: 700;
+  color: rgb(229, 65, 92);
+}

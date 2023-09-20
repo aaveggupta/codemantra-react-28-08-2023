@@ -4,10 +4,13 @@ import "./ResultComponent.css";
 const ResultComponent = ({ place }) => {
   return (
     <section className="resultComponent">
-      {place !== "" && (
-        <h1>
-          Temperature in <span>{place}</span> is <span>34°C</span>
-        </h1>
+      {place.name !== "" && place.temp !== "" && (
+        <>
+          <h1>
+            Temperature in <span>{place.name}</span> is{" "}
+            <span>{place.temp}°F</span>
+          </h1>
+        </>
       )}
     </section>
   );
